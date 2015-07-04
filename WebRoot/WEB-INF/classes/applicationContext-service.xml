@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="UserService" class="com.yizhaobao.service.UserService">
+		<property name="userDAO">
+			<ref bean="UserDAO" />
+		</property>
+	</bean>
+	<bean id="ShopService" class="com.yizhaobao.service.ShopService">
+		<property name="shopDAO">
+			<ref bean="ShopDAO" />
+		</property>
+	</bean>
+	<bean id="ShoptypeService" class="com.yizhaobao.service.ShoptypeService">
+		<property name="shoptypeDAO">
+			<ref bean="ShoptypeDAO" />
+		</property>
+	</bean>
+	<bean id="RoleService" class="com.yizhaobao.service.RoleService">
+		<property name="roleDAO">
+			<ref bean="RoleDAO" />
+		</property>
+	</bean>
+	<bean id="AdvertiseemergeService" class="com.yizhaobao.service.AdvertiseemergeService">
+		<property name="advertiseemergeDAO">
+			<ref bean="AdvertiseemergeDAO" />
+		</property>
+	</bean>
+	<bean id="CollectionService" class="com.yizhaobao.service.CollectionService">
+		<property name="collectionDAO">
+			<ref bean="CollectionDAO" />
+		</property>
+	</bean>
+	<bean id="CommentService" class="com.yizhaobao.service.CommentService">
+		<property name="commentDAO">
+			<ref bean="CommentDAO" />
+		</property>
+	</bean>
+	<bean id="CommunityService" class="com.yizhaobao.service.CommunityService">
+		<property name="communityDAO">
+			<ref bean="CommunityDAO" />
+		</property>
+	</bean>
+	<bean id="GoodsService" class="com.yizhaobao.service.GoodsService">
+		<property name="goodsDAO">
+			<ref bean="GoodsDAO" />
+		</property>
+	</bean>
+	<bean id="MessageService" class="com.yizhaobao.service.MessageService">
+		<property name="messageDAO">
+			<ref bean="MessageDAO" />
+		</property>
+	</bean>
+	<bean id="PictureService" class="com.yizhaobao.service.PictureService">
+		<property name="pictureDAO">
+			<ref bean="PictureDAO" />
+		</property>
+	</bean>
+	<bean id="ReviewService" class="com.yizhaobao.service.ReviewService">
+		<property name="reviewDAO">
+			<ref bean="ReviewDAO" />
+		</property>
+	</bean>
+	<bean id="MenuService" class="com.yizhaobao.service.MenuService">
+		<property name="menuDAO">
+			<ref bean="MenuDAO" />
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="login-register" extends="com.yizhaobao">
+		<!-- 用户登录模块 -->
+		<action name="login" class="LoginAction" method="login">
+			<result name="success" type="redirect">/index</result>
+		</action>
+		<action name="logout" class="LoginAction" method="logout">
+			<result type="redirect">/index</result>
+		</action>
+		<action name="index" class="LoginAction" method="loginIndex">		
+			<result name="success">/index.jsp</result>
+			<result name="businessIndex">/busin_manage/busin_center.jsp</result>
+		</action>
+		<action name="newCode" class="LoginAction" method="newCode"></action>
+		<action name="checkCode" class="LoginAction" method="checkCode"></action>
+		<!-- 注册模块 -->
+		<action name="registerIndex" class="RegisterAction" method="doNothing">
+			<result name="success">/register.jsp</result>
+		</action>
+		<action name="register" class="RegisterAction" method="register">
+			<result name="success">/success.jsp</result>
+			<result name="false">/index.jsp</result>
+		</action>
+		<action name="isHaveUser" class="RegisterAction" method="isHaveUser">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+	</package>
+</struts>

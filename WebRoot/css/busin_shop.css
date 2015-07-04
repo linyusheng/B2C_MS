@@ -1,0 +1,59 @@
+/* CSS Document */
+body{ margin:0; padding:0; font-size:12px; font-family: "宋体";}
+h1,ul,li,p,dl,dt{margin: 0; padding: 0; list-style: none; border:0;}
+/*头部*/
+.body{width:960px; overflow:hidden; margin:10px auto;}
+.left{width:700px; overflow:hidden;float:left;}
+.user_info{width:668px; height:288px; padding:10px 15px 0 15px;border:1px #DDDDDD solid; background:#FFF;}
+.shop_name{width:668px; height:49px; line-height:39px; font-size:26px; font-weight:bold; border-bottom:1px dashed #CCCCCC; margin-bottom:15px;}
+.shop_picture{width:249px; height:189px; float:left; margin-right:25px;}
+.shop_info{width:394px; height:189px; float:left;}
+.introdution{color:#333333; font-size:14px; line-height:25px;}
+.introdution label{color:#999;}
+.introdution a:link,.introdution a:visited{text-decoration:none; color:#999;}
+.introdution a:hover{text-decoration:underline; color:#F60;}
+.button{float:left; width:394px; margin-top:55px;}
+.button form{float:left;}
+.button input[type=submit]{ display:block;float:left;width:75px;height:32px;color:#FFF; font-size:14px;border:1px solid #FF3030;background: #FF3030;cursor:pointer; margin:0 25px 0 0; border-radius:2px;outline:none;}
+.button input:hover{background:#EE0000;}
+.rank{width:100%;float:left; height:50px; line-height:50px; border-bottom:1px solid #DDDDDD;margin-bottom:15px;}
+.rank ul li{ display:block;float:left; height:49px;margin-right:20px;color:#666;}
+.rank ul li a:link,.rank ul li:visited{ text-decoration:none;}
+.rank ul li a:hover{background:#06F; color:#FFF;}
+.user_comment{width:700px;float:left;background:#FFF; }
+.user_comment ul li{display:block;width:698px; height:100px;float:left;border-bottom:dashed 1px #CCCCCC;}
+.user_head{width:100px; height:100px;float:left; text-align:center;}
+.user_head img{ margin:10px 25px 10px 25px;}
+.user_head a:link,.user_head a:visited{ text-decoration:none;}
+.user_head a:hover{text-decoration:underline;}
+.comment_top{width:598px; height:35px;line-height:35px;float:left; background:#FCFCFC;}
+.comment_under{width:588px; height:65px;float:left;line-height:25px; padding-left:10px;}
+.comment_top dl dt{display:block;float:left; margin-right:25px;}
+.comment_top dl dt img{ margin:10px auto auto 10px;}
+.user_comment ul li.more{font-size:16px;text-align:right; width:688px; height:50px; line-height:50px; padding-right:10px;}
+.user_comment ul li a:link,.user_comment ul li a:visited{text-decoration:none;}
+.user_comment ul li a:hover{ text-decoration:underline;color:#F60;}
+.right{width:240px;float:right;}
+#container{width:238px; height:240px; float:left; margin-bottom:10px; border:1px solid #CCCCCC;}
+.map_search{width:238px; height:170px; float:left; border:1px solid #DDDDDD; color:#333;margin-bottom:15px;}
+.div_1{float:left;width:212px; height:30px; background:#F2F2F2; line-height:30px; padding:0 13px 0 13px; border-bottom:1px solid #DDDDDD;margin-bottom:15px;}
+.div_1 label{ display:block;float:left;}
+.div_1 a:link,.div_1 a:visited{display:block;float:right;text-decoration:none;height:15px;line-height:15px;margin:8px 0 7px 0;}
+.div_1 a:hover{color:#FFF; background:#06F;}
+.div_2,.div_3{float:left;width:201px;height:18px;border:1px solid #DDDDDD; margin:0 10px 5px 10px;line-height:18px;padding:6px;}
+.div_2{border-left:3px solid #FE6700;}
+.div_3{border-left:3px solid #3D8812;margin-bottom:15px;}
+.div_2 label,.div_3 label{ display:block;float:left;width:30px;border-right:1px solid #DDDDDD;}
+.div_2 input[type=text],.div_3 input[type=text]{ display:block;float:left;width:160px;margin:0 auto;border:0;padding-left:7px;outline:none;}
+.div_4{width:218px;float:left;margin:0 10px 0 10px;}
+.div_4 a:link,.div_4 a:visited{text-decoration:none;border:1px solid #D4D4D4; display:block;width:100px;height:22px; line-height:22px;float:left; text-align:center;background:#F4F4F4;}
+.div_4 a:hover{ background:#ECECEC;}
+.ad{width:238px; float:left; border:1px solid #DDDDDD; color:#333;}
+.ad_title{width:223; height:40px; border-bottom:1px solid #DDDDDD;color:#CC0000;line-height:40px;padding-left:15px;}
+.ad_shop{float:left;width:208px;padding:15px;}
+.ad_shop ul li{display:block;float:left;width:208px; margin-bottom:10px;}
+.name a:link,.name a:visited{float:left;line-height:16px; text-decoration:none;}
+.name a:hover{ color:#FFF; background:#06F;}
+.ad_shop ul li img{display:block;float:left;}
+
+

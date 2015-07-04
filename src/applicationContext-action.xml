@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="LoginAction" class="com.yizhaobao.action.LoginAction" scope="prototype">
+		<property name="userService" ref="UserService" ></property>
+		<property name="shopService" ref="ShopService" ></property>
+		<property name="commentService" ref="CommentService" ></property>
+	</bean>
+	<bean id="RegisterAction" class="com.yizhaobao.action.RegisterAction" scope="prototype">
+		<property name="userService" ref="UserService" ></property>
+		<property name="shoptypeService" ref="ShoptypeService" ></property>
+		<property name="shopService" ref="ShopService" ></property>
+	</bean>
+	<bean id="UserAction" class="com.yizhaobao.action.UserAction" scope="prototype">
+		<property name="userService" ref="UserService" ></property>
+		<property name="commentService" ref="CommentService" ></property>
+		<property name="collectionService" ref="CollectionService" ></property>
+		<property name="messageService" ref="MessageService" ></property>
+		<property name="shopService" ref="ShopService" ></property>
+		<property name="goodsService" ref="GoodsService" ></property>
+	</bean>
+	<bean id="ShopAction" class="com.yizhaobao.action.ShopAction" scope="prototype">
+		<property name="shopService" ref="ShopService" ></property>
+		<property name="shoptypeService" ref="ShoptypeService" ></property>
+		<property name="commentService" ref="CommentService" ></property>
+		<property name="collectionService" ref="CollectionService" ></property>
+	</bean>
+	<bean id="CommentAction" class="com.yizhaobao.action.CommentAction" scope="prototype">
+		<property name="commentService" ref="CommentService" ></property>
+		<property name="shopService" ref="ShopService" ></property>
+	</bean>
+	<bean id="CollectionAction" class="com.yizhaobao.action.CollectionAction" scope="prototype">
+		<property name="collectionService" ref="CollectionService" ></property>
+	</bean>
+	<bean id="MessageAction" class="com.yizhaobao.action.MessageAction" scope="prototype">
+		<property name="messageService" ref="MessageService" ></property>
+	</bean>
+	<bean id="CommunityAction" class="com.yizhaobao.action.CommunityAction" scope="prototype">
+		<property name="communityService" ref="CommunityService" ></property>
+	</bean>
+	<bean id="GoodsAction" class="com.yizhaobao.action.GoodsAction" scope="prototype">
+		<property name="goodsService" ref="GoodsService" ></property>
+	</bean>
+	<bean id="PictureAction" class="com.yizhaobao.action.PictureAction" scope="prototype">
+		<property name="pictureService" ref="PictureService" ></property>
+	</bean>
+	<bean id="ReviewAction" class="com.yizhaobao.action.ReviewAction" scope="prototype">
+		<property name="reviewService" ref="ReviewService" ></property>
+	</bean>
+	<bean id="AdvertiseEmergeAction" class="com.yizhaobao.action.AdvertiseEmergeAction" scope="prototype">
+		<property name="advertiseemergeService" ref="AdvertiseemergeService" ></property>
+	</bean>
+	<bean id="RoleAction" class="com.yizhaobao.action.RoleAction" scope="prototype">
+		<property name="roleService" ref="RoleService" ></property>
+	</bean>
+	<bean id="AdminAction" class="com.yizhaobao.action.AdminAction" scope="prototype">
+		<property name="userService" ref="UserService" ></property>
+	</bean>
+	<bean id="MenuAction" class="com.yizhaobao.action.MenuAction" scope="prototype">
+		<property name="menuService" ref="MenuService" ></property>
+	</bean>
+</beans>

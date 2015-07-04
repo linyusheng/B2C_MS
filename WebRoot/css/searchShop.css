@@ -1,0 +1,17 @@
+/* CSS Document */
+body{margin:0; padding:0; font-size:12px; font-family: "宋体";}
+h1,ul,li,p,dl,dt{margin: 0; padding: 0; list-style: none; border:0;}
+/* 主体部分 */
+.body{width:960px; overflow:hidden; margin:0 auto 150px auto;}
+.theme{ width:960px;height:100px;}
+.theme img{ display:block;float:left;}
+.theme label{display:block;float:left;font-size:22px;font-weight:bold; color:#333333; margin:58px 0 0 18px;}
+.div_search{width:960px; height:238px; margin:0 auto;}
+.div_search img{ display:block;float:left;}
+.div_center{ float:left;width:509px; height:238px;}
+.center_input{float:left; width:509px; height:146px;}
+.center_input p{ display:block; margin:58px auto 25px auto; text-align:center;color:#333; font-size:20px; font-family:Microsoft YaHei;}
+.center_input div{width:371px;height:31px; border:1px solid #CCC; border-radius:3px; box-shadow:inset 2px 2px 3px #eee;margin:0 auto;padding-left:10px; padding-top:3px;}
+.center_input div input{display:block;float:left; width:343px;height:29px; border:0; margin:0 auto; outline:none; font-size:14px;}
+.center_input div a{ display:block;float:left;width:25px;height:24px; padding-top:5px;}
+

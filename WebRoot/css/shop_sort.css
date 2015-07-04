@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0; font-size:12px; font-family: "宋体";}
+h1,h2,ul,li,p,img,dl,dt{margin: 0; padding: 0; list-style: none; border: 0;}
+/*body的大小*/
+.home{width:960px; overflow:hidden;margin:0 auto;}
+/*body左部分*/
+.home_left{display:block;float:left; width:175px; margin:0 auto;}
+.nav_market{ width:175px; height:40px;background:#FF3030;font-size:20px; line-height:40px;  font-weight:bold;  color:#FFF; text-align:center;}
+
+	/*动态广告条*/
+.ad_left{ width:175px; height:500px;margin-top:10px; margin-bottom:10px; float:left;}
+/*body中部分*/
+.home_center{display:block; float:left; width:600px;margin:0 5px 0 5px;}
+.label{ width:585px; height:33px; margin:0 auto; padding:0 0 0 15px;font-size:16px; font-weight:bold; color:#FF3030; line-height:35px;}
+.label font{color:#999;}
+.ad_vendor{width:600px;}
+.ad_vendor ul li{ display:block;float:left;width:570px; min-height:120px; padding:10px 15px 10px 15px; border-bottom:dashed #CCCCCC 1px;}
+.businPhoto{width:166px; height:120px;float:left; }
+.VendorInfo{float:left; width:364px; padding-left:40px; line-height:30px;}
+.VendorInfo h2 a:link,.VendorInfo h2 a:visited{color:#F00; text-decoration:none;}
+.VendorInfo h2 a:hover{ text-decoration:underline;}
+.no_result{ width:100%; height:60px; float:left;line-height:60px; font-size:18px; color:#333; text-align:center;}
+
+/*body右部分*/
+.home_right{display:block; float:left; width:175px; overflow:hidden; margin:5px auto;}
+.ad_map{width:173px; height:173px; border:1px solid #FC0; margin-bottom:10px;}
+.ad_goods{width:173px; height:173px; border:1px solid #CCC; margin-bottom:10px;}
+

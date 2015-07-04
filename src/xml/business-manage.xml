@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="business-manage" extends="com.yizhaobao">
+		<!-- 商户模块 -->
+		<action name="baseInfo" class="UserAction" method="loadMessage">
+			<result>/busin_manage/baseInfo.jsp</result>
+		</action>
+		<action name="otherInfo" class="UserAction" method="loadMessage">
+			<result>/busin_manage/otherInfo.jsp</result>
+		</action>
+		<action name="safeInfo" class="UserAction" method="loadMessage">
+			<result>/busin_manage/safeInfo.jsp</result>
+		</action>
+		<action name="shopInfo" class="UserAction" method="loadMyShop">
+			<result>/busin_manage/shopInfo.jsp</result>
+		</action>
+		<action name="myStorehouse" class="UserAction" method="loadMyGoods">
+			<result>/busin_manage/myStorehouse.jsp</result>
+		</action>
+		<action name="postTrade" class="UserAction" method="loadMessage">
+			<result>/busin_manage/postTrade.jsp</result>
+		</action>
+		<action name="saveBusinBaseInfo" class="UserAction" method="saveBaseInfo">
+			<result type="redirect">/baseInfo</result>
+		</action>
+		<action name="saveBusinOtherInfo" class="UserAction" method="saveMessage">
+			<result type="redirect">/otherInfo</result>
+		</action>
+		<action name="saveBusinPassword" class="UserAction" method="savePassword">
+			<result name="success" type="redirect">/safeInfo</result>
+		</action>
+		<action name="saveShopInfo" class="RegisterAction" method="saveBusinessShop">
+			<result name="success" type="redirect">/shopInfo</result>
+		</action>
+		
+	</package>
+</struts>

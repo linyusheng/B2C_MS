@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="about_us" extends="com.yizhaobao">
+		<action name="introduction" class="ShopAction" method="doNothing">
+			<result>/about_us/about_us.jsp</result>
+		</action>
+		<action name="userAgreement" class="ShopAction" method="doNothing">
+			<result>/about_us/about_us01.jsp</result>
+		</action>
+		<action name="businAgreement" class="ShopAction" method="doNothing">
+			<result>/about_us/about_us02.jsp</result>
+		</action>
+		<action name="property" class="ShopAction" method="doNothing">
+			<result>/about_us/about_us03.jsp</result>
+		</action>
+		<action name="contactUs" class="ShopAction" method="doNothing">
+			<result>/about_us/about_us04.jsp</result>
+		</action>
+	</package>
+</struts>

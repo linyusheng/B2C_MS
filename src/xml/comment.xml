@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="comment" extends="com.yizhaobao">
+
+		<action name="saveComment" class="CommentAction" method="save">
+			<result name="success">/shop_manage/busin_shop.jsp</result>
+		</action>
+		<action name="deleteComment" class="CommentAction" method="remove">
+			<result name="success" type="redirect">/myComment</result>
+		</action>
+		
+		
+	</package>
+</struts>

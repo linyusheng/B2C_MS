@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0;font-size:12px; font-family: "宋体"; background:#FCFCFC;}
+h1,ul,li,p{margin: 0; padding: 0; list-style: none; border:0;}
+a{ text-decoration:none; color:#333;}
+
+/*  头部  */
+.userInfo{width:928px; overflow:hidden;margin:0 auto 10px auto;border:solid #CCCCCC 1px; background:#FFF; padding:15px;font-size:14px;}
+.photo{padding:1px; float:left; border:1px solid #DDDDDD; margin-right:15px;}
+.info{ width:300px;height:104px;line-height:45px; float:left; text-align:left;}
+.info label,.announce label{ color:#333;font-weight:bold;}
+.announce{float:left;width:501px;height:104px;line-height:35px;text-align:center;}
+.announce a:hover{ text-decoration:underline;}
+/*  中部  */
+	
+	/*导航栏部分*/
+	.div_nav{ width:960px; margin:0 auto; position:relative;}
+	.nav{ width:958px; float:left; height:34px; border:1px solid #dadada;}
+	.nav li{ font-size:14px;  float:left; width:160px; height:34px;-webkit-transition:all 0.35s linear; cursor:pointer; text-align:center; line-height:32px; list-style-type:none;}
+	.nav li.on{ color:#f00;}
+	.line{ width:640px; float:left; position:relative; left:0; top:0px;}
+	.s_line{
+		position: absolute;
+		display:block;
+		width:160px;
+		z-index: 1;
+		top: -7px;
+		left: 0;
+		height: 7px;
+		border-bottom: 2px solid #E4393C;
+		overflow: hidden;
+		text-align: center;
+	}
+	.nav{
+		background: #efefef;
+	}
+	.s_line b{
+		display: inline-block;
+		margin-top: -8px;
+		width: 0;
+		height: 0;
+		border-style: dashed dashed solid;
+		border-width: 10px;
+		border-color: transparent transparent #E4393C;
+		overflow: hidden;
+		zoom: 1;
+		font-size: 0;
+	}
+	.mid_content{
+		width:960px; 
+		margin: 0px auto; 
+	}
+	.item_tab{
+		min-height: 480px;
+		border: 1px solid #dadada;
+		border-top: 0px;
+		padding: 20px;
+		text-align:center;
+	}
+	/*首页*/
+	.home_list{width:868px; height:100px; margin:0 auto; border-bottom:solid #CCCCCC 1px; font-size:16px;background:#FFF; padding:25px;}
+	.list_images1{width:100px; height:100px;float:left;background:url(../images/pages.png) no-repeat 0 0;}
+	.list_images2{width:100px; height:100px;float:left;background:url(../images/pages.png) no-repeat 0 0;}
+	.list_images3{width:100px; height:100px;float:left;background:url(../images/pages.png) no-repeat 0 0;}
+	.list_images4{width:100px; height:100px;float:left;background:url(../images/pages.png) no-repeat -210px 0;}
+	.list_images5{width:100px; height:100px;float:left;background:url(../images/pages.png) no-repeat 0 0;}
+	.list_images6{width:100px; height:100px;float:left;background:url(../images/pages.png) no-repeat 0 -111px;}
+	.list_label{width:300px;height:60px; line-height:30px;float:left;color:#000;padding:20px 80px 20px 80px;}
+	.list_txt{width:80px;height:35px;float:left; padding:32px 114px 33px 114px;}
+	.list_txt a:link,.list_txt a:visited{ display:block; width:80px; height:35px; line-height:35px; background:#FF3030; color:#FFF; font-size:14px; border-radius:1px;}
+	.list_txt a:hover{ background:#EE0000;}
+	/*积分明细*/
+	table{border-collapse:collapse;width:100%; color:#333;}
+	th,td{border:1px solid #DDDDDD; height:30px; padding:0 5px 0 5px;}		
+	/*积分说明*/
+	.infor_text{width:918px; height:150px; margin:30px auto; }

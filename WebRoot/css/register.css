@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin: 0;padding: 0;font-size: 12px;font-family: "宋体"; background:#FCFCFC;}
+h1,h2,ul,li,p,img,dl,dt,dd{margin: 0; padding: 0; list-style: none; border: 0;}
+/**内容**/
+.content{width:960px; overflow:auto; margin:0 auto;}
+/**欢迎横幅**/
+.welcome{width:960px; height:100px;}
+.welcome img{float:left; margin-left:15px;}
+.label_welcome{float:left;width:150px;height:100px;float:left; text-align:center; line-height:100px; font-size:30px;}
+/**注册选项卡**/
+.tab{width:960px; overflow:auto;}
+#container{float:left;width:960px; height:35px; line-height:35px;}
+.dt_left{width:300px;}
+.dt_center{width:31px;}
+.dt_right{width:375px;text-align:right; line-height:47px; padding-right:30px;}
+.dt_right a:visited,.dt_right a:link{text-decoration:none;}
+.dt_right a:hover{ text-decoration:underline;}
+#container dl dt{float:left; height:34px;border-bottom:1px #CCCCCC solid;}
+#container dl dd{float:left;width:110px;height:33px;font-size:16px;text-align:center;border:1px #CCCCCC solid;}
+.on {background:#FFF;border-bottom:#FFF 1px solid !important; font-weight:bold;color:#FF3030;}
+.out{background:#F5F5F5;}
+#content1{width:958px; height:360px; background:#FFF;float:left; border:1px #CCCCCC solid; border-top:none; padding-top:50px;}
+#content2{width:958px; height:940px; background:#FFF;float:left; border:1px #CCCCCC solid; border-top:none; padding-top:50px;display:none;}
+.information{float:left;width:943px; height:32px; line-height:32px;font-size:14px;color:#666; background:#F7F7F7; border-top:1px solid #CCCCCC; margin-bottom:20px; padding-left:15px; }
+.box{float:left;width:140px; height:29px;border:1px solid #CCC; margin-right:20px;padding-top:6px;}
+select{width:140px;background:#FFF; font-size:14px;border:0px #CCC;}
+option{color:#999;}
+/* 注册成功后 */
+.finish{width:600px; height:20px; font-size:18px; line-height:20px; margin:200px auto;}
+.success_tip{ float:left; width:300px;height:20px;}
+#timer{ float:left;width:10px;height:20px;}
+.finish label{ display:block; float:left; height:20px; line-height:20px;}
+
+/**用户和商户的共享css样式**/
+.form_item{float:left;width:958px; height:37px;font-size:16px; margin-bottom:30px;}
+.form_item label{display:block;float:left;width:295px;height:37px; text-align:right; line-height:37px;color:#999; margin-right:5px;}
+.input_text{float:left; width:260px;height:35px; border:1px #CCCCCC solid;line-height:25px;font-size:14px; padding-left:4px;}
+.form_item label.readme{float:left;text-align:left;width:230px;height:17px; line-height:17px; font-size:14px; margin-top:10px;}
+.input_check{float:left; margin-top:10px;}
+.readme a:visited,.readme a:link{text-decoration:none;}
+.readme a:hover{text-decoration:underline;}
+.input_button{width:100px; height:35px; border:1px #FF3030 solid; background:#FF3030; font-weight:bold; color:#FFF;font-size:16px; cursor:pointer;}
+.input_button:hover{background:#EE0000;}
+/*****验证提示样式*****/
+#tips{position:absolute;border:1px solid #ccc;padding:0px 5px;color:#666;height:37px;line-height:37px;background:#F5F5F5;display:none;}
+#tips_username,#tips_password,#tips_check_password,#tips_agreeprovision,#tips_business_name,#tips_business_password,#tips_business_check_password,#tips_real_name,#tips_telephone,#tips_identify,#tips_e-mail,#tips_shopName,#tips_shopAddress,#tips_business_agreeprovision{position:absolute;border:1px solid #F00;padding:0px 5px;color:#F00;display:none; width:200px;height:37px;line-height:37px;background:#FFF0F5;}
+#agreeprovision,#business_agreeprovision{width:262px; height:37px; float:left;}
+

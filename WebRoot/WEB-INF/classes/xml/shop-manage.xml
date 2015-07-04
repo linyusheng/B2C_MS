@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="shop-manage" extends="com.yizhaobao">
+		<!-- 商户分类 -->
+		<action name="searchShop" class="ShopAction" method="doNothing">
+			<result name="success">/searchShop.jsp</result>
+		</action>
+		<action name="search" class="ShopAction" method="search">
+			<result name="success">/shop_manage/search.jsp</result>
+		</action>
+		<action name="shopSort" class="ShopAction" method="sort">
+			<result name="success">/shop_manage/shop_sort.jsp</result>
+		</action>
+		<action name="enterShop" class="ShopAction" method="enterShop">
+			<result name="success">/shop_manage/busin_shop.jsp</result>
+		</action>
+		<action name="writeComment" class="ShopAction" method="writeComment">
+			<result name="success">/shop_manage/comment.jsp</result>
+		</action>
+		<action name="collectionShop" class="ShopAction" method="collectionShop">
+			<result name="success" type="redirect">/enterShop?id=${id}</result>
+		</action>
+		<!-- 加载图片 -->
+		<action name="downlaodShopPhoto" class="ShopAction" method="downlaodShopPhoto"></action>
+		<action name="downlaodRankPhoto" class="ShopAction" method="downlaodRankPhoto"></action>
+		<action name="downloadUserPhoto" class="ShopAction" method="downloadUserPhoto"></action>
+		
+	</package>
+</struts>

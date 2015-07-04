@@ -1,0 +1,50 @@
+﻿/* top */
+.top{height: 13px; background:#F5F5F5;padding:8px; border-bottom:1px solid #D8D8D8;font-size:12px;}
+.top span{display:block; float:center;color:#333; text-align:left;height:15px; width:935px; margin:0 auto; line-height:13px; padding-left:25px; font-family:"Microsoft YaHei", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Helvetica, Arial,  sans-serif; }
+.top span label{font-size:13px;}
+.top span a:visited,.top span a:link{text-decoration:none; color:#666;}
+.top span a:hover{ color:#F00;}
+/* footer */
+.footer{ width:960px; height:90px; margin:0 auto; padding-top:15px; font-size:14px; text-align: center;}
+.footer hr{border:0; height:1px; background:#EDEDED;}
+.footer p a:hover{text-decoration:underline;}
+.footer a:link,.footer a:visited{text-decoration:none;}
+/* head  */
+.head{width:947px; height:125px; margin:0 auto; padding:25px 0 0 13px; }
+.logo{display:block; float:left; height:100px;width:150px; margin:0 auto;}
+.search{display:block; float:left; height:73px;width:693px; margin:0 0 0 12px;padding:27px 0 0 92px;}
+.search form{ float:left; display:block;width:492px; height:40px;border:3px solid #FF3030;}
+.search_text{display:block;width:482px; height:38px; border:0;font-size:14px; outline:none;float:left;box-shadow:inset 2px 4px 5px #eee; padding-left:10px;}
+.search_button{ display:block;width:100px;height:46px;border:0;font-size:20px;font-weight: bold;color: #FFF;margin: 0 auto;background: #FF3030;cursor: pointer; float:left; line-height:46px; text-align:center;}
+.search_button:hover{outline:none;}
+.search a:link,.search a:visited{text-decoration:none;}
+/*  sort */
+.sort_list{ width:175px;height:320px;position:relative; float:left;}
+.sort_list ul li{height:38px;background:#FAFAFA; line-height:39px; float:left; text-align:center; border:1px solid #FF3030; border-bottom:none;position:relative;list-style-type:none;}
+.sort_list ul li.last_line{border-bottom:1px solid #FF3030;}
+.sort_list ul li a{display:block; width:173px;margin:0 auto;}
+.sort_list a:link,.sort_list a:visited{font-size:16px;color:#000;text-decoration:none;}
+.sort_list a:hover{text-decoration:none;color:#FF3030;}
+/******鼠标经过分类列表时显示的样式********/
+.sort_list ul li.hover_bg{background:#FFF; border-right:#FFF;}
+.Secon_Dary{width:175px;background:#FFF;border:1px solid #FF3030;position:absolute;right:-177px;top:-40px;padding-bottom:15px;z-index:1;display:none;}
+.Secon_Dary p a{display:block;color:#000;height:38px;line-height:36px;border-bottom: dashed 1px #FF3030; cursor:pointer;}
+.Secon_Dary a:link,.Secon_Dary a:visited{font-size:12px;}
+/* 分页 */
+.paging{float:left; width:500px; height:30px; padding:25px 0 0 100px;}
+ul,li{list-style:none;margin:0; padding:0; font-size:12px;}
+.byPage,.searchPage{width:250px; height:22px;float:left; line-height:20px;text-align:center;}
+.byPage ul li{display:block;float:left;width:50px;height:22px; margin-right:5px;}
+.byPage ul li a:link,.byPage ul li a:visited{ display:block;width:48px; height:20px;border:1px #CCCCCC solid; text-decoration:none;}
+.byPage ul li a:hover{color:#FF6600;border-color:#FF6600 !important;}
+.searchPage ul li{ display:block; float:left;height:22px;}
+.searchPage ul li input{height:20px;border:1px #CCCCCC solid; outline:none;}
+.searchPage ul li a:link,.searchPage ul li a:visited{ display:block;width:30px; height:20px; text-decoration:none; border:1px #CCCCCC solid; color:#000;}
+.searchPage ul li a:hover{ border:1px solid #FF6600; color:#FF6600;}
+.noStyle{border:1px solid #CCCCCC;}
+/*  rankshop_bar */
+.ranking{width:168px;float:left; margin-right:7px;border: 1px #CCCCCC solid; background:#FFF;}
+.label1{width:153px; height:35px;background: #FFE7BA ;margin:0 auto;font-size:16px; font-weight:bold; color:#FF3030; line-height:35px;float:left; padding-left:15px;}
+.ranking ul li{display:block;float:left;width:155px;line-height:35px;font-size:14px; padding-left:13px;}
+.ranking ul li a:link,.ranking ul li a:visited{color:#666;text-decoration:none;}
+.ranking ul li a:hover{ text-decoration:underline;color:#F60;}

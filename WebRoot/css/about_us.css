@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0; font-size:12px; font-family: "宋体";}
+h1,h2,ul,li,p,img,dl,dt{margin: 0; padding: 0; list-style: none; border: 0;}
+/*中间*/
+.mid{width:947px; height:600px; margin:0 auto; padding:0 0 0 13px;}
+.mid span{display:block; float:left;}
+.mid a:link,.mid a:visited{font-size:20px; font-weight:bold; text-decoration:none;}
+.mid a:hover{text-decoration:underline;}
+.mid1{width:947px; height:8000px; margin:0 auto; padding:0 0 0 13px;}
+.mid1 span{display:block; float:left;}
+.mid1 a:link,.mid1 a:visited{font-size:20px; font-weight:bold; text-decoration:none;}
+.mid1 a:hover{text-decoration:underline;}
+.mid2{width:947px; height:4600px; margin:0 auto; padding:0 0 0 13px;}
+.mid2 span{display:block; float:left;}
+.mid2 a:link,.mid2 a:visited{font-size:20px; font-weight:bold; text-decoration:none;}
+.mid2 a:hover{text-decoration:underline;}
+.mid3{width:947px; height: 850px; margin:0 auto; padding:0 0 0 13px;}
+.mid3 span{display:block; float:left;}
+.mid3 a:link,.mid3 a:visited{font-size:20px; font-weight:bold; text-decoration:none;}
+.mid3 a:hover{text-decoration:underline;}
+.mid4{width:947px; height: 500px; margin:0 auto; padding:0 0 0 13px;}
+.mid4 span{display:block; float:left;}
+.mid4 a:link,.mid4 a:visited{font-size:20px; font-weight:bold; text-decoration:none;}
+.mid4 a:hover{text-decoration:underline;}
+/*中间左部*/
+.mid_left{display:block;float:left; width:175px; margin:0 auto;}
+/*左边导航栏*/
+.left_list{ width:177px;height:204px;position:relative; border:1px solid #999;}
+.left_list ul li{
+	height:38px;
+	background:#EDEDED ;
+	line-height:39px;
+	float:left;
+	text-align:center;
+	border:2px solid #FFF;
+	border-bottom:none;
+	position:relative;
+	list-style-type:none;
+    color: #333;
+}
+
+.left_list ul li a{display:block; width:173px;margin:0 auto;}
+.left_list a:link,.left_list a:visited{font-size:16px; color:#836FFF; text-decoration:none;}
+.left_list a:hover{
+	color:#FF3030;
+	background:#CCC;
+}
+
+	/*为左边导航栏的某一指定行设置样式*/
+	.left_list ul li.about_usindex{text-decoration:none;font-weight:bold; color:#FFF; background:#CCC;}
+
+	
+/*中间右边*/
+.mid_right {display:block; float:left; width:750px; height:600px; margin:0 0 0 17px; padding:0 0 0 0; border:1px solid #999;}
+.mid_right1 {display:block; float:left; width:750px; height:8000px; margin:0 0 0 17px; padding:0 0 0 0; border:1px solid #999;}
+.mid_right2 {display:block; float:left; width:750px; height:4600px; margin:0 0 0 17px; padding:0 0 0 0; border:1px solid #999;}
+.mid_right3 {display:block; float:left; width:750px; height:850px; margin:0 0 0 17px; padding:0 0 0 0; border:1px solid #999;}
+.mid_right4 {display:block; float:left; width:750px; height:500px; margin:0 0 0 17px; padding:0 0 0 0; border:1px solid #999;}
+/*中间右边标题*/
+.right_title1 {height: 17px; text-align: center;  margin:40px 0 0 0; font-size:20px; font-weight: 600;}
+
+.right_space1 {height:20px; text-align: left;  margin:20px 0 0 0;  padding:10px 40px 0 43px; font-size:15px; line-height: 200%;}
+.right_space20 {height: 30px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 20px 43px; font-size:15px; line-height: 200%;}
+.right_space2 {height: 40px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 40px 43px; font-size:15px; text-indent:30px; line-height: 200%;}
+.right_space30 {height:60px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 10px 43px; font-size:15px;  text-indent:30px; line-height: 200%;}
+.right_space3 {height:60px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 10px 43px; font-size:15px; line-height: 200%;}
+.right_space40 {height:100px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 10px 43px; font-size:15px; line-height: 200%;}
+.right_space4 {height:100px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 10px 43px; font-size:15px; text-indent:30px; line-height: 200%;}
+.right_space5{height: 80px; text-align: left;  margin:120px 0 0 0;  padding:20px 40px 40px 43px; font-size:15px; text-indent:30px; line-height: 200%;}
+.right_space60 {height:170px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 10px 43px; font-size:15px;  text-indent:30px; line-height:200%;}
+.right_space6 {height:170px; text-align: left;  margin:20px 0 0 0;  padding:20px 40px 10px 43px; font-size:15px; line-height: 200%;}

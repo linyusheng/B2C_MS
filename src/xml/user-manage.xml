@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user-manage" extends="com.yizhaobao">
+		<!-- 普通用户中心模块 -->
+		<action name="userCenter" class="UserAction" method="loadMessage">
+			<result>/user_manage/user_center.jsp</result>
+		</action>
+		<action name="userBaseInfo" class="UserAction" method="loadMessage">
+			<result>/user_manage/baseInfo.jsp</result>
+		</action>
+		<action name="userAllInfo" class="UserAction" method="loadMessage">
+			<result>/user_manage/allInfo.jsp</result>
+		</action>
+		<action name="editPassword" class="UserAction" method="loadMessage">
+			<result>/user_manage/editPassword.jsp</result>
+		</action>
+		<action name="saveBaseInfo" class="UserAction" method="saveBaseInfo">
+			<result type="redirect">/userBaseInfo</result>
+		</action>
+		<action name="saveMessage" class="UserAction" method="saveMessage">
+			<result type="redirect">/userAllInfo</result>
+		</action>
+		<action name="savepassword" class="UserAction" method="savePassword">
+			<result name="success" type="redirect">/userBaseInfo</result>
+		</action>
+		<action name="myComment" class="UserAction" method="myComment">
+			<result>/user_manage/myComment.jsp</result>
+		</action>
+		<action name="myCollection" class="UserAction" method="myCollection">
+			<result>/user_manage/myCollection.jsp</result>
+		</action>
+		<action name="myMessage" class="UserAction" method="myMessage">
+			<result>/user_manage/myMessage.jsp</result>
+		</action>
+		<action name="registration" class="UserAction" method="myRegistration">
+			<result>/user_manage/registration.jsp</result>
+		</action>
+		<action name="photo" class="UserAction" method="myPhoto">
+			<result>/user_manage/photo.jsp</result>
+		</action>
+		<!-- 下载用户头像 -->
+		<action name="downloadPhoto" class="UserAction" method="downloadPhoto"></action>
+	</package>
+</struts>

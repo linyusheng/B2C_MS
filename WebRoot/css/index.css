@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0; font-size:12px; font-family: "宋体";}
+h1,h2,ul,li,p,img,dl,dt,dd{margin: 0; padding: 0; list-style: none; border: 0;}
+/*导航栏*/
+.nav{ width:960px; height:40px; margin:0 auto;}
+.nav_market{ width:175px; height:40px;background:#FF3030;font-size:20px; line-height:40px;  font-weight:bold;color:#FFF; text-align:center;border-top-left-radius:2px; border-top-right-radius:2px;}
+.nav span{display:block; float:left;}
+.nav ul li{width:155px; height:40px; margin-left:1px;background:#FF3030;line-height:40px;float:left;text-align:center;}
+.nav ul li:hover{background:#EE0000;}
+.nav_bar{width:780px; height:40px;margin:0 0 0 5px;}
+.nav_bar a:link,.nav_bar a:visited{display:block; width:154px; height:40px;font-size:20px; color:#FFF; font-weight:bold; text-decoration:none;}
+.nav_bar a:hover{text-decoration:none;}
+/*body的大小*/
+.home{width:960px; overflow:hidden;margin:0 auto;}
+/*body左部分*/
+.home_left{display:block;float:left; width:175px; margin:0 auto;}
+.ad_1{ float:left; width:175px; height:150px; margin-top:20px; position:relative;top:0; left:0;}
+.ad_1 .hd{z-index: 1;position: absolute;left: 80px;top: 130px;}
+.ad_1 .hd ul li{ float:left;width:15px; height:15px; line-height:15px; text-align:center; cursor:pointer; border:1px solid #CCC; background:#FFF; margin-left:5px;}
+.ad_1 .hd ul li.on{ background:#F00; color:#FFF; border-color:#F00; font-weight:bold;}
+/*body中部分*/
+.home_center{display:block; float:left; width:600px;margin:5px 5px 0 5px;}
+.ad_2 {position:relative;width:600px;height:250px;margin:10px auto;}
+.ad_2 .hd{position: absolute;right: 237px;z-index: 1;top: 245px;}
+.ad_2 .hd li{width:20px;height:20px;float:left;font-size:16px;color:#fff;border-radius:20px;background:#f90;text-align:center;margin-right:5px;cursor:pointer;opacity:0.7;filter:alpha(opacity=70);}
+.ad_2 .hd li.on{background:#f60;font-weight:bold;opacity:1;filter:alpha(opacity=70);}
+.label{ width:585px; height:33px; margin-left:15px;font-size:16px;color:#CC0000; line-height:35px; border-bottom:1px solid #DDDDDD;}
+.label label{ display:block; height:32px; border-bottom:2px solid #CC0000;float:left;}
+.ad_vendor{width:600px; margin-bottom:10px;}
+.ad_vendor ul li{ display:block;width:570px; height:120px; padding:10px 15px 10px 0; border-bottom:dashed #CCCCCC 1px;margin-left:15px;}
+.userPoto{width:166px; height:120px;float:left; }
+.VendorInfo{float:left; width:364px;height:120px; padding-left:40px; line-height:30px;}
+.VendorInfo h2 a:link,.VendorInfo h2 a:visited{color:#F00; text-decoration:none;}
+.VendorInfo h2 a:hover{text-decoration:underline;}
+.new_comment{width:600px;float:left;background:#FFF; padding-top:10px;}
+.new_comment ul li{display:block;width:600px;float:left;border-bottom:dashed 1px #CCCCCC;}
+.user_head{width:100px; height:100px;float:left; text-align:center;}
+.user_head img{ margin:10px 25px 10px 25px;}
+.userName_shopName{float:left;height:30px; line-height:30px;}
+.userName_shopName a:link,.userName_shopName a:visited{ text-decoration:none;}
+.userName_shopName a:hover{text-decoration:underline;}
+.comment_top{width:500px; height:35px;line-height:35px;float:left; background:#FCFCFC;}
+.comment_under{width:490px;float:left;line-height:25px; padding-left:10px;}
+.comment_top dl dt{display:block;float:left; margin-right:15px;}
+.comment_top dl dt img{ margin:10px auto auto 10px;}
+.new_comment ul li.more{font-size:16px;text-align:right; width:588px; height:50px; line-height:50px; padding-right:10px;}
+.new_comment ul li a:link,.content_right ul li a:visited{text-decoration:none;}
+.new_comment ul li a:hover{ text-decoration:underline;color:#F60;}
+/*body右部分*/
+.home_right{display:block; float:left; width:175px;margin:5px auto;}
+.container{float:left; width:173px;  margin:10px 0 10px 0;border:#CCC 1px solid;}
+.welcome{float:left;width:173px;}
+.welcome label{display:block; height:45px; line-height:45px; text-align:center;color:#333;}
+.welcome a:link,.welcome a:visited{ display:block; float:left;width:65px; height:30px; line-height:30px; color:#FFF; background:#FF3030; text-align:center;font:"MS Serif", "New York", serif; text-decoration:none; border-radius:2px; margin:0 9px 15px 11px;}
+.welcome a:hover{ background:#EE0000;}
+.comment{float:left;width:173px; height:90px;}
+.comment label{ display:block; height:45px; line-height:45px; text-align:center;color:#666666;}
+.comment input{ height:30px; width:75px; border:1px #FF6600 solid; color:#FFF; font-size:14px; font-weight:bold; background:#FF3030;  margin-left:46px; outline:none;border-radius:2px;}
+.comment input:hover{ background:#EE0000;}
+.slideTxtBox{float:left;width:173px; height:173px;border:1px solid #CCC; margin-bottom:10px;text-align:left;}
+.slideTxtBox .hd{ height:30px; line-height:30px; background:#f4f4f4; padding:0 15px; border-bottom:1px solid #ddd;}
+.slideTxtBox .hd ul li{ float:left; padding:0 10px; cursor:pointer; color:#333333;}
+.slideTxtBox .hd ul li.on{ height:30px;  background:#fff; border-left:1px solid #ddd;border-right:1px solid #ddd;  border-bottom:2px solid #fff; font-weight:bold;}
+.slideTxtBox .bd ul{ padding:15px;  zoom:1;}
+.slideTxtBox .bd li{ height:24px; line-height:24px;}
+.slideTxtBox .bd li .date{ float:right; color:#999;}
+.top_Shop{float:left;width:153px;border:1px solid #CCC; margin-bottom:10px; padding:10px;}
+.top_Shop label{ display:block; font-size:14px; color:#CC0000; margin-bottom:10px;}
+.top_Shop ul li{ float:left; display:block; width:153px; height:40px; margin-bottom:10px;}
+.top_Shop ul li img{display:block; float:left; margin-right:10px;}
+.top_Shop ul li div{ float:left; width:93px;line-height:15px;}
+.top_Shop ul li div a:link,.top_Shop ul li div a:visited{ text-decoration:none;}
+.top_Shop ul li div a:hover{ color:#FFF; background:#6666CC;}
+.top_Shop ul li div img{ display:block; margin-top:10px;}

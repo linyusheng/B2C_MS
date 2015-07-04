@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0; font-size:12px; font-family:"Microsoft YaHei", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Helvetica, Arial,  sans-serif; background:url(../images/bg.png) fixed center top;}
+h1,h2,ul,li,p,img,dl,dt{margin: 0; padding: 0; list-style: none; border: 0;}
+
+a.search_button{ font-family:"宋体"}
+.search input[type=radio]{display:block; float:left;margin:10px 15px 0 10px;}
+.search label{ display:block; float:left;line-height:33px;}
+.body{width:938px; height:1000px; border:1px solid #F9F9F9; background:#FDFDFD; margin:0 auto; border-radius:5px; box-shadow:2px 2px 2px #FEFEFE; padding:10px;}
+.ad_4{float:left;width:659px; height:249px;border:1px solid #E7E7E7;padding:4px;position:relative;}
+.ad_4 .hd li.on{ background:#FF3030;}
+.ad_4 .hd{position: absolute;right:307px;z-index: 1;top: 261px;}
+.ad_4 .hd ul li{width:10px;height:10px;float:left;border-radius:20px;background:#DDDDDD;text-align:center;margin-right:5px;cursor:pointer;opacity:0.7;filter:alpha(opacity=70);}
+.ad_4 .hd ul li:hover{background:#f90;}
+
+.button{ float:left;width:268px; height:259px;}
+.button a:link,.button a:visited{ display:block;width:180px; height:56px; line-height:56px; font-size:18px; text-decoration:none; color:#666; text-align:center; border:1px dashed #DDDDDD; border-radius:5px; margin:40px auto; box-shadow:1px 1px 0 #FFFFFF;}
+.button a:hover{ background:#FFF;}
+.button a i{ background:url(../images/circle_pics.png) no-repeat scroll -50px -30px;vertical-align: middle;display:inline-block;width: 28px;height: 28px;margin-right: 8px;}
+
+
+
+.main{float:left;width:938px; margin-top:35px;}
+.new_community{float:left; width:100%; }
+.top_title{float:left; width:100%; height:40px; line-height:40px;border-bottom:1px solid #DDDDDD; font-size:16px; color:#FF3030; margin-bottom:15px;}
+.top_title label{ display:block;float:left; height:39px; border-bottom:2px solid #FF3030;}
+.community{float:left; width:100%; }
+.community ul li{float:left; display:block;width:372px;overflow:hidden;height:98px; margin-bottom:15px; margin-right:96px;}
+.com_left{float:left;width:90px; height:90px;border:1px solid #DDDDDD; padding:3px; margin-right:10px;}
+.com_right{float:left;width:264px; height:98px;}
+.com_right div{border-bottom:1px solid #DDDDDD; height:25px;}
+.com_right div label{display:block; float:left; height:24px; border-bottom:2px solid #FF3030;}
+.com_right a:link,.com_right a:visited{ text-decoration:none; color:#333; font-size:14px;}
+.com_right a:hover{ color:#FF3030;}
+.com_right span{ display:block;float:left; width:264px;height:23px; line-height:23px; color:#666;}
+.com_right span p{ float:left; display:block; margin-right:15px;}
+.com_right span p label{ color:#333;}
+.com_right p{color:#666;}
+
+.message{float:left; width:100%;}
+.message ul li{float:left; display:block; width:430px;height:98px; margin:0 39px 15px 0;background:#F5FAF6;}
+.ms_left{float:left;width:90px; height:90px;border:1px solid #DDDDDD; padding:3px; margin-right:10px;}
+.ms_right{float:left;width:322px; height:98px;}
+.ms_right p{display:block; float:left;width:322px; line-height:30px;}
+.ms_right p a:link,.ms_right p a:visited{ text-decoration:none; color:#333; font-size:14px;}
+.ms_right p a:hover{ color:#FF3030;}
+.ms_right span{float:left;width:322px; height:30px; line-height:30px; }
+.ms_right span p{color:#666;}
+.ms_right span p a:link,.ms_right span p a:visited{ font-size:12px;}
+.ms_right span p a:hover{}
+
+/*创建圈子页面*/
+	/*中间部分*/
+	.circle_mid{width:758px;overflow:hidden; border:1px solid #E6E6FA; background:#FDFDFD; margin:0 auto; color:#666; border-radius:5px; box-shadow: 0 0 8px #E6E6FA; padding:20px;}
+	/*中间部分的头部*/
+	.circle_mid_top{ height:70px; font-size:14px; border-bottom:dashed #CCCCCC 1px;}
+	.circle_mid_top a:hover{ font-size:16px;}
+	.circle_mid_top p{ margin:10px auto; color:#999;}
+	.color{ color:#5F9EA0; font-weight:bold;}
+	.big_font{ font-size:24px; color:#5F9EA0;}
+	/*中间部分的中部*/
+	.circle_mid_mid{ height:50px; font-size:16px; border-bottom:solid #CCCCCC 2px; margin-top:30px;}
+	.list_label{ display:inline; width:150px; height:40px;margin: 0 50px 10px 0;}
+	/*中间部分的表单部分*/
+	.circle_mid_form{height:700px;margin:0 auto;padding:30px 50px 30px 50px; font-size:14px;}
+	.circle_form_label{ display:inline; float:left; width:110px; text-align:right; margin:0 5px 0 0; padding-top:5px;}
+	.circle_form_tips{ display:block; float:left; height:20px; width: 538px; margin-top:5px; margin-left:5px; font-size:12px; color: #999; text-align:left;}
+	.circle_form_tips:hover{ color:#5F9EA0;}
+	.circle_form_text{ display:inline; float:left;height:60px; width: 543px;}
+	.circle_form_text input,.circle_form_area textarea{height:30px;border:1px solid #999; border-radius:3px; padding-left:5px;}
+	.circle_form_area{ display:inline; float:left;height:140px; width: 543px;}
+	.text{height:25px; width:360px;margin-left:5px; margin-bottom: 5px;}	
+	#circle_sort{margin:0 auto; height: 90px;  border-bottom:dashed #F5F5F5 1px; margin-bottom:10px;}
+	.sort_select{ display:inline;float:left; height:90px; width: 543px; padding-top:5px; }
+	.sort_select input{ margin-bottom:10px; margin-left:20px;}
+	.sort_select input[value="美食炊饮"],.sort_select input[value="运动健身"]{margin-left:0;}
+	#circle_name{float:left; margin:0 auto; height: 70px;  border-bottom:dashed #F5F5F5 1px; margin-bottom:10px;}
+	#circle_photo{float:left; margin:0 auto; height: 40px;  border-bottom:dashed #F5F5F5 1px; margin-bottom:10px;}
+	#circle_summary{float:left; margin:0 auto; height: 150px;  border-bottom:dashed #F5F5F5 1px; margin-bottom:10px;}
+	#area_summary{height:100px; width:360px;margin-left:5px; margin-bottom: 5px;  overflow-x:hidden; resize:none;}
+	#summary{font-size:18px; font-weight:bold; color:#009900; font-style:italic;}
+    #circle_label{float:left; margin:0 auto; height: 70px;  border-bottom:dashed #F5F5F5 1px; margin-bottom:10px;}
+	#reason_application{float:left; margin:0 auto; height: 150px;  border-bottom:dashed #F5F5F5 1px; margin-bottom:10px;}
+	#area_application{height:100px; width:360px;margin-left:5px; margin-bottom: 5px;  overflow-x:hidden; resize:none;}
+	#application{font-size:18px; font-weight:bold; color:#009900; font-style:italic;}
+	#circle_clause{float:left; margin:0 auto; height: 35px;  border-bottom:dashed #F5F5F5 1px; margin-bottom:10px;}
+	.circle_form_check{ display:block; float:left; height:20px; width: 538px; margin-left:5px; font-size:12px; color: #999; text-align:left;}
+	.circle_form_check a:link{ color:#009900;}
+	#circle_submit{float:left; margin:0 auto; height: 50px; margin-bottom:10px;}
+	.circle_form_button{ display:block; float:left; height:35px; width: 538px; margin-left:5px;}
+	.circle_form_button input{cursor:pointer;background:#00A500; outline:none;border:0;float:left;width:80px; height:32px; color:#FFF; text-align:center; font-size:14px; font-weight:bold;  line-height:30px; border-radius:3px; box-shadow:1px 1px 0 #FFFFFF; }
+	.circle_form_button input:hover{background:#009900;}
+
+
+
+
+
+
+
+
+
+
+
+

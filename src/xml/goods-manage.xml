@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="goods" extends="com.yizhaobao">
+		
+		<action name="saveGoods" class="GoodsAction" method="save">
+			<result name="success" type="redirect">/postTrade</result>
+		</action>
+		<action name="deleteGoods" class="GoodsAction" method="remove">
+			<result name="success" type="redirect">/myStorehouse</result>
+		</action>
+		
+	</package>
+</struts>

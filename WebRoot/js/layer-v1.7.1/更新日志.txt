@@ -1,0 +1,36 @@
+1.7.1更新日志
+
+01、新增layer.iframeSrc(index, url),用于重置iframe层的url
+02、btns和btn两个参数向页面层（type:1）和iframe层（type:2）进行了开放，这两个模式的层默认都无按钮，需要时可如是配置：$.layer({type:1,page:{html:'<div style="padding:50px;">test</div>'}, btns:1,btn:['新按钮']}); 用法跟dialog的btns、btn完全一样，值得注意的是，请不要配置在dialog里面。
+03、修复通过layer.area方法改变iframe层宽高单位带px时，边框没有变化的bug。
+04、优化性能。
+
+【拓展模块】
+01、layer.prompt新增title参数，用于自定义标题。如：layer.prompt({title:'helllo prompt'});
+
+
+====================================================
+
+
+1.7.0更新日志
+
+01、tips层可支持上（0）、右（1）、下（2）、左（3）方向的选择（之前版本只可配置上下或左右），详细使用见API
+02、对layer.load()参数做了多重判断，如果你想在loading中附加一些文字的话，您可以这样：layer.load('加载中'); 如果参数不是一个字符串，它将以一般的loading形式展现。
+03、对layer.msg()参数做了多重判断layer.msg(msgText,msgTime,parme,callback),如果parme是一个数字，则将作为msg的图标参数，如果parme是一个函数，则将作为层消失后的end的回调，如果parme是一个object，您可配置{type:图标类型,shade：false//是否遮罩，如果是，不用配置,rate:'top'//弹出的动画类型，具体值见layer.shift的参数说明}
+04、layer.shift的rate参数（弹出的动画类型），新增从上、下、左弹出（考虑到实际需求，暂时不提供向右）
+05、新增moveType，用于配置拖拽类型，默认空心方块式拖动层，若值设为1，则直接拖动层
+06、重新添加fadeIn参数，用于层的渐显
+
+07、优化代码结构。
+08、优化tips层(type:4)UI
+09、优化loading层(type:3)UI。
+
+【拓展模块】
+1.7.0开始增加了一个layer.ext.js,主要是对layer做了一些拓展，您可以按照自己的需求选择引入，同样的，不需要引入css，只需要引入js文件即可。
+
+10、新增prompt层模式，支持普通文本框（0）、密码框（1）、文件框（2）、多行文本框（3），调用：layer.prompt(opations,yes回调, no回调);
+11、新增tab层模式，调用：layer.tab();
+12、新增layer.closeTips(),用于关闭tips层。
+
+
+来自： http://sentsin.com/jquery/layer/

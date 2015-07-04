@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/b2c_ms">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="12345"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/yizhaobao/entity/Role.hbm.xml</value>
+				<value>com/yizhaobao/entity/Shoptype.hbm.xml</value>
+				<value>com/yizhaobao/entity/Comment.hbm.xml</value>
+				<value>com/yizhaobao/entity/Review.hbm.xml</value>
+				<value>com/yizhaobao/entity/Shop.hbm.xml</value>
+				<value>com/yizhaobao/entity/Picture.hbm.xml</value>
+				<value>com/yizhaobao/entity/Goods.hbm.xml</value>
+				<value>com/yizhaobao/entity/Menu.hbm.xml</value>
+				<value>com/yizhaobao/entity/Message.hbm.xml</value>
+				<value>com/yizhaobao/entity/Collection.hbm.xml</value>
+				<value>
+					com/yizhaobao/entity/Advertiseemerge.hbm.xml
+				</value>
+				<value>com/yizhaobao/entity/Community.hbm.xml</value>
+				<value>com/yizhaobao/entity/User.hbm.xml</value></list>
+		</property></bean>
+	<bean id="RoleDAO" class="com.yizhaobao.entity.RoleDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ShoptypeDAO" class="com.yizhaobao.entity.ShoptypeDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CommentDAO" class="com.yizhaobao.entity.CommentDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ReviewDAO" class="com.yizhaobao.entity.ReviewDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ShopDAO" class="com.yizhaobao.entity.ShopDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="PictureDAO" class="com.yizhaobao.entity.PictureDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="GoodsDAO" class="com.yizhaobao.entity.GoodsDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="MenuDAO" class="com.yizhaobao.entity.MenuDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="MessageDAO" class="com.yizhaobao.entity.MessageDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CollectionDAO"
+		class="com.yizhaobao.entity.CollectionDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="AdvertiseemergeDAO"
+		class="com.yizhaobao.entity.AdvertiseemergeDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CommunityDAO" class="com.yizhaobao.entity.CommunityDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserDAO" class="com.yizhaobao.entity.UserDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean></beans>

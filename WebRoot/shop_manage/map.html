@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">  
+html{height:100%}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:100%}  
+</style>  
+<script type="text/javascript"  
+src="http://webapi.amap.com/maps?v=1.2&key=4dda83e9837a825271d214348eb4f168">  
+</script>  
+<script type="text/javascript">  
+function initialize(){  
+  var position=new AMap.LngLat(116.406326,39.903942);//创建中心点坐标  
+	var mapObj=new AMap.Map("container",{//创建地图实例
+		center:position,//地图中心点
+		level : 15  //地图显示的缩放级别
+		});
+	//向地图添加插件
+	mapObj.plugin(["AMap.ToolBar","AMap.OverView","AMap.Scale"],function(){  
+	  //加载工具条  
+	  tool=new AMap.ToolBar({
+	    direction:true,//隐藏方向导航  
+	    ruler:true,//隐藏视野级别控制尺  
+	    autoPosition:false//禁止自动定位  
+	  });  
+	  mapObj.addControl(tool);  
+	  //加载鹰眼  
+	  view=new AMap.OverView();  
+	  mapObj.addControl(view);  
+	  //加载比例尺  
+	  scale=new AMap.Scale();  
+	  mapObj.addControl(scale);  
+	});
+	var marker = new AMap.Marker({ //自定义构造AMap.Marker对象                  
+	  map:mapObj,                  
+	  position: position,                  
+	  offset: new AMap.Pixel(-10,-34),            
+	  icon: "http://webapi.amap.com/images/marker_sprite.png"                  
+	});
+	//提示窗口
+	var info = [];                  
+	info.push("<b>&nbsp;&nbsp;高德软件</b>");                  
+	info.push("&nbsp;&nbsp;电话 :  010-84107000   邮编 : 100102");                  
+	info.push("&nbsp;&nbsp;地址 : 北京市望京阜通东大街方恒国际中心A座16层");
+	var inforWindow = new AMap.InfoWindow({                  
+	  offset:new AMap.Pixel(0,-23),                  
+	  content:info.join("<br  />")                  
+	});                  
+	AMap.event.addListener(marker,"click",function(e){                  
+	  inforWindow.open(mapObj,marker.getPosition());                  
+	});
+}  
+</script>  
+</head>  
+  
+<body onload="initialize()">  
+<div id="container"></div>  
+</body> 

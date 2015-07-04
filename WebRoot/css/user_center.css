@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0; font-size:12px; font-family: "宋体";  background:#F8FBFE url(../images/buyer_bg.png) repeat-x  scroll center top;  }
+h1,ul,li,p{margin: 0; padding: 0; list-style: none; border:0;}
+/*  头部  */
+#head{width:960px; height:150px; margin:0 auto;background:url(../images/buyer_header.png) no-repeat scroll center top;}
+#head span{display:block; float:left;}
+.head_images{width:100px;height:125px;padding:25px 34px 0 34px;font-size:13px;color:#FFF;text-align:center;}
+.head_images a:link,.head_images a:visited{ text-decoration:none; color:#000;}
+.head_images a:hover{text-decoration:underline;color:#C00;}
+.nav_bar{ width:790px;height:150px; line-height:35px; float:left; text-align:center;}
+.div_top{float:left;width:790px;height:60px; line-height:60px; text-align:left; padding-top:20px;}
+.nav_bar h2{display:block;float:left;color:#333; margin:0 auto; font-family:"MS Serif", "New York", serif; padding:0 30px 0 10px;}
+.nav_bar p{display:block;float:left; color:#333; font-size:14px;}
+.list_button{float:left; width:780px; height:35px; background:#FF0000; border:1px solid #FF0000;border-radius:3px; margin:10px 0 0 8px;}
+.list_button ul li{ display:block;float:left;font-size:15px;border-right:1px solid #D65700;}
+.list_button ul li a:link,.list_button ul li a:visited{display:block;width:100px; height:35px;text-decoration:none;color:#FFF; line-height:35px;font-weight:bold;}
+.list_button ul li a:hover{ background:#EE0000;}
+#content{width:960px;overflow:hidden;margin:0 auto;}
+/*左部分内容*/
+.content_left{width:168px;float:left; border:1px solid #CCCCCC;margin-right:5px; background:#FFF; color:#666666;border-radius:3px 0 0 3px;}
+.content_left ul{ padding:20px 0 0 30px;}
+.content_left ul li{ height:34px;}
+.title_left{ display:block;width:148px; height:34px;background:url(../images/bar.png) repeat-x; line-height:34px; font-weight:bold; padding-left:20px; cursor:pointer;border-radius:3px 0 0 3px;}
+.title_left img{ float:left;vertical-align:middle;}
+.hover_color a:visited,.hover_color a:link{text-decoration:none; color:#666666;}
+.hover_color a:hover{ text-decoration:underline;color:#F00;}
+#ul_myFootPrint,#ul_myInfo,#ul_myComment,#ul_myCollection,#ul_myMessage{display:none}
+/****右部分内容****/
+.content_right{width:783px;float:left; border:1px solid #CCCCCC;background:#FFF; padding-bottom:30px; min-height:420px;border-radius:0 3px 3px 0;}
+.title_right{width:763px; height:34px; background:url(../images/bar.png) repeat-x ; line-height:34px; padding-left:20px; margin-bottom:20px; color:#666666;border-radius:0 3px 3px 0;}
+.title_right label{ color:#F00;}
+/*首页*/
+.list{width:770px; height:40px;font-size:14px;float:left;padding:20px 0 20px 15px; border-bottom:dashed #FF9900 1px;}
+.list_left{width:80px;height:40px;float:left;font-size:22px;font-weight:bold;line-height:40px;text-align:center;}
+.list_left a:link,.list_left a:visited{ text-decoration:none;color:#FF3030;}
+.list_left a:hover{ text-decoration:underline;}
+.list_right{height:40px;float:left;line-height:40px;text-align:center; margin-left:15px;color:#666666;}
+/*个人资料*/
+.content_right ul li{min-height:50px;line-height:50px; font-size:14px;  display:block;float:left;}
+.left{ width:300px; text-align:right; color:#666666; margin-right:7px;}
+.left label{ color:#F00;}
+.right{ width:475px; text-align:left;color:#333;font-family:"MS Serif", "New York", serif;}
+.right input{margin-top:15px;outline:none; color:#666;}
+#photoPath,#phone,#QQ,#email,#realName,#identify,#address,#birthday,#income,#position,#password,#newPassword,#confirm_password{display:block;float:left;height:30px; margin:10px auto; box-shadow:inset 2px 2px 5px #eee;border:1px solid #CCC; border-radius:3px; padding-left:8px;}
+#submit{display:block;float:left;height:30px; margin:10px auto;border:1px solid #FF3030; border-radius:3px; background:#FF3030; cursor:pointer; color:#FFF; font-weight:bold;}
+#submit:hover{ background:#F00}
+#select{display:block;float:left;height:32px; margin:10px auto auto 15px;border:1px solid #FF3030;border-radius:3px; background:#FF3030; cursor:pointer; color:#FFF; font-weight:bold;}
+#select:hover{background:#F00}
+.right select{width:120px; border:1px solid #CCC;background:#FFF; margin-top:15px;color:#666;}
+.right textarea{width: 308px; height:80px; outline:none;color:#333333; margin-top:15px; max-width:577px; border-radius:3px;box-shadow:inset 2px 2px 5px #eee;border:1px solid #CCC; padding:10px 0 0 10px;color:#666;}
+.noInfo{ width:450px; height:55px; line-height:46px; font-size:18px; color:#333; margin:50px auto;}
+.noInfo a:visited,.noInfo a:link{ text-decoration:none;}
+.noInfo a:hover{text-decoration:underline;}
+/*我的点评*/
+.noComment{width:670px;height:102px; margin:60px auto;color:#555555;}
+.noComment img{float:left; margin-right:30px; display:block;}
+.noComment h2{ display:block;float:left; width:538px; height:50px; line-height:50px; margin:0 auto; font-size:16px;}
+.noComment a:link,.noComment a:visited{ text-decoration:none;color:#555555;}
+.noComment a:hover{ text-decoration:underline;}
+.noComment p{ display:block;float:left; width:538px;font-size:14px;}
+.div_comment{ width:700px;margin:30px auto; overflow:hidden; border-bottom:1px dashed #CCCCCC; padding-bottom:20px;}
+.div_comment span{ display:block; width:100%;float:left;}
+.span_top{ height:40px; background:#F8F8F8; line-height:40px;}
+.span_top a:link,.span_top a:visited{ display:block;float:left; margin-left:20px; text-decoration:none; color:#A66602; font-size:16px; font-weight:bold;}
+.span_top a:hover{text-decoration:underline;}
+.span_top img{ display:block;float:left;margin:13px 40px 13px 40px;}
+.span_top p{ color:#555555;}
+.span_top p label{color:#999999;}
+.span_center{ width:680px !important;padding:10px 0 10px 20px; line-height:30px; color:#555555;}
+.span_bottom{ height:30px; line-height:30px;color:#999999;}
+.span_bottom label{ display:block;float:left; padding-left:20px;}
+.span_bottom p{ display:block; float:right; padding-right:20px;}
+.span_bottom p a:link,.span_bottom p a:visited{ text-decoration:none;color:#A66602;}
+.span_bottom p a:hover{ text-decoration:underline;}
+/*我的收藏*/
+.noCollection{width:500px;height:102px; margin:60px auto;color:#555555;}
+.noCollection img{float:left; margin-right:30px; display:block;}
+.noCollection h2{ display:block;float:left; width:368px; height:50px; line-height:50px; margin:0 auto; font-size:16px;}
+.noCollection a:link,.noCollection a:visited{ text-decoration:none;color:#555555;}
+.noCollection a:hover{ text-decoration:underline;}
+.noCollection p{ display:block;float:left; width:368px;font-size:14px;}
+.div_collection{width:700px; overflow:hidden; margin:30px auto;padding:5px 0 10px 0; background:#F8F8F8;}
+.div_collection span{display:block; width:100%;float:left;}
+.coll_top{height:40px; background:#F8F8F8; line-height:40px;}
+.coll_top a:link,.coll_top a:visited{display:block;float:left; margin-left:20px; text-decoration:none; color:#A66602; font-size:16px; font-weight:bold;}
+.coll_top a:hover{text-decoration:underline;}
+.coll_center{ line-height:30px;}
+.coll_center img{ display:block;float:left;margin:8px 20px 8px 20px; }
+.coll_bottom{ width:680px !important; height:30px; line-height:30px; padding-left:20px; color:#999999;}
+.coll_bottom a:link,.coll_bottom a:visited{ text-decoration:none; color:#A66602;}
+.coll_bottom a:hover{text-decoration:underline;}
+/*我的帖子*/
+.noMessage{width:550px;height:102px; margin:60px auto;color:#555555;}
+.noMessage img{float:left; margin-right:30px; display:block;}
+.noMessage h2{ display:block;float:left; width:418px; height:50px; line-height:50px; margin:0 auto; font-size:16px;}
+.noMessage a:link,.noMessage a:visited{ text-decoration:none;color:#555555;}
+.noMessage a:hover{ text-decoration:underline;}
+.noMessage p{ display:block;float:left; width:418px;font-size:14px;}
+/*签到*/
+.noRegistration{width:550px;height:102px; margin:60px auto;color:#555555;}
+.noRegistration img{float:left; margin-right:30px; display:block;}
+.noRegistration h2{ display:block;float:left; width:418px; height:50px; line-height:50px; margin:0 auto; font-size:16px;}
+.noRegistration a:link,.noRegistration a:visited{ text-decoration:none;color:#555555;}
+.noRegistration a:hover{ text-decoration:underline;}
+.noRegistration p{ display:block;float:left; width:418px;font-size:14px;}
+/*图片*/
+.noPhoto{width:550px;height:102px; margin:60px auto;color:#555555;}
+.noPhoto img{float:left; margin-right:30px; display:block;}
+.noPhoto h2{ display:block;float:left; width:418px; height:50px; line-height:50px; margin:0 auto; font-size:16px;}
+.noPhoto a:link,.noPhoto a:visited{ text-decoration:none;color:#555555;}
+.noPhoto a:hover{ text-decoration:underline;}
+.noPhoto p{ display:block;float:left; width:418px;font-size:14px;}
+
+
+
+
